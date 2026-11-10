@@ -1,0 +1,362 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000">
+  <title>Only jêyå open this surprise</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main id="app">
+
+    <!-- PASSWORD SCREEN -->
+    <section id="passwordScreen" class="screen active">
+      <div class="welcome-box">
+        <h1>Only jêyå open this surprise</h1>
+        <p>A little surprise is waiting for you ❤️</p>
+        <input id="passwordInput" type="password" placeholder="Enter password">
+        <button id="unlockBtn">Unlock ❤️</button>
+        <p id="passwordMessage"></p>
+      </div>
+    </section>
+
+    <!-- FIRST INTRO VIDEO -->
+    <section id="intro1Screen" class="screen">
+      <h2>For You ❤️</h2>
+      <video id="introVideo1" class="main-video" playsinline>
+        <source src="Videos/interovideo1.mp4" type="video/mp4">
+      </video>
+      <div class="video-controls">
+        <button class="pauseBtn" data-video="introVideo1">Pause</button>
+        <button class="fullscreenBtn" data-video="introVideo1">Full Screen</button>
+      </div>
+      <button id="intro1Continue" class="continueBtn" hidden>Continue ❤️</button>
+    </section>
+
+    <!-- PINK CONTINUE SCREEN -->
+    <section id="pinkContinueScreen" class="screen">
+      <h1>One More Surprise 💗</h1>
+      <button id="pinkContinueBtn" class="pinkBtn">Continue 💗</button>
+    </section>
+
+    <!-- SECOND INTRO VIDEO -->
+    <section id="intro2Screen" class="screen">
+      <h2>Just For You ❤️</h2>
+      <video id="introVideo2" class="main-video" playsinline>
+        <source src="Videos/interovideo2.mp4" type="video/mp4">
+      </video>
+      <div class="video-controls">
+        <button class="pauseBtn" data-video="introVideo2">Pause</button>
+        <button class="fullscreenBtn" data-video="introVideo2">Full Screen</button>
+      </div>
+      <button id="intro2Continue" class="continueBtn" hidden>Continue ❤️</button>
+    </section>
+
+    <!-- CAKE SECTION -->
+    <section id="cakeScreen" class="screen section-wallpaper rose-background">
+      <div class="space-theme" id="cakeSpaceTheme">
+<pre>Jêyå 
+　✧　　　　　　　　　　.
+　　　　　　🪐　　　　　°
+　　.　　　　　⋆　　　　　.　　　　　🌙
+　　　　*　　　　　　.　　　　　　✦
+　.　　　　　🛸　　　　　.
+　　　　　　　𝑯𝒂𝒑𝒑𝒚
+　　.　　　　　✧　　　　　　.
+　　　　🌟　　　　　　⋆
+　.　　　　　　　°　　　　　　　.
+　　　　　☄️　　　　　　✦
+　　.　　　　　𝑩𝒊𝒓𝒕𝒉𝒅𝒂𝒚
+　　　　˚　　　　　　　.
+　✦　　　　　🌙　　　　　.　　　　　🪐
+　　　.　　　　　　*　　　　　.
+　　⋆　　　　　　☄️　　　　　　𝑻𝒐
+　.　　　　　　✦　　　　　　　.
+　　　🌍　　　　　　˚
+　　.　　　　　🛸　　　　　.　　　　　🌟
+　　　　　⋆　　　　　　✧
+　.　　　　　　　𝑴𝒀
+　　.　　　　　　❤️　　　　　　.
+　　　　🌸　　　　　⋆
+　　　　　　𝑱𝑨𝑵 ❤️　.　　　　　✦　　　　　　.
+　　　🪐　　　　　　˚　　　　　☄️　　.　　　　　　⋆　　　　　　.
+　　　　　🌙　　　　　✧
+　.　　　　　　𝑴𝒚 𝑺𝒖𝒏𝒔𝒉𝒊𝒏𝒆 ☀️　　.　　　　　🌟　　　　　.
+　　　✦　　　　　　.　　　　　　🛸
+　.　　　　　˚　　　　　　☄️　　　　⋆　　　　　　🌍
+　　.　　　　　𝑴𝒚 𝑯𝒂𝒑𝒑𝒊𝒏𝒆𝒔𝒔 ❤️　.　　　　　　✧　　　　　　　.
+　　　🌙　　　　　　🪐
+　　⋆　　　　　.　　　　　✦
+　　　　.　　　　　　𝑴𝒚 𝑱𝒊𝒈𝒓𝒊𝒊𝒊
+　.　　　　　☄️　　　　　.
+　　　🌸　　　　　˚　　　　　🌟
+　　.　　　　　𝒀𝑨𝑹 🤭❤️　　　　　✦　　　　　　.
+　.　　　　　🛸　　　　　　⋆
+　　　　🌍　　　　　.　　　　　🌙
+　　.　　　　　　✧
+　　　　　𝑴𝒚 𝑩𝒆𝒔𝒕𝒊𝒆 🌸
+　.　　　　　⋆　　　　　.
+　　　🪐　　　　　✦　　　　　☄️　　.　　　　　𝑴𝒚 𝑭𝒂𝒗𝒐𝒖𝒓𝒊𝒕𝒆
+　.　　　　　🌙　　　　　.
+　　　⋆　　　　　　𝑷𝒆𝒓𝒔𝒐𝒏 ❤️　　✦　　　　　.　　　　　🌍
+　.　　　　　　☄️　　　　　　.
+　　　　˚　　　　　🌸
+　　.　　　　　𝑴𝒚 𝑶𝒏𝒆 & 𝑶𝒏𝒍𝒚 🫀
+　.　　　　　✧　　　　　.
+　　　🛸　　　　　　⋆　　　　　　🌙
+　　.　　　　　𝑴𝒚 𝑭𝒂𝒗𝒐𝒖𝒓𝒊𝒕𝒆 𝑯𝒖𝒎𝒂𝒏
+　.　　　　　　❤️🌸❤️　　　✦　　　　　　.　　　　　　🪐
+　　⋆　　　　　🌍　　　　　.
+　.　　　　　☄️　　　　　˚
+　　　🌟　　　　　　✧
+　　.　　　　　　𝑴𝒚 𝑺𝒂𝒇𝒆 𝑷𝒍𝒂𝒄𝒆 ❤️　.　　　　　🌙　　　　　　.
+　　　　⋆　　　　　✦
+　　.　　　　　　🛸　　　　　　.
+　　　　　𝑴𝒚 𝑷𝒆𝒂𝒄𝒆 🕊️　.　　　　　🌸　　　　　⋆
+　　　🪐　　　　　　.　　　　　☄️　　✧　　　　　.　　　　　🌍
+　.　　　　　　𝑴𝒚 𝑷𝒒𝒈𝒂𝒍𝒑𝒂𝒏 🤭
+　　🌙　　　　　⋆　　　　　.
+　.　　　　　✦　　　　　　🌟
+　　　.　　　　　　🛸
+　　　　　𝑴𝒚 𝑬𝒏𝒅𝒍𝒆𝒔𝒔 𝑺𝒎𝒊𝒍𝒆 ❤️　.　　　　　　☄️　　　　　.
+　　　⋆　　　　　🌍　　　　　✦
+　.　　　　　　𝑴𝒚 𝑭𝒐𝒓𝒆𝒗𝒆𝒓 𝑱𝑨𝑵
+　　❤️🌸❤️🌸❤️　.　　　　　🌙　　　　　　.
+　　　🪐　　　　　✧　　　　　☄️　　.　　　　　⋆　　　　　　.
+　　　　𝑴𝒂𝒚 𝑨𝒍𝒍𝒂𝒉 𝑩𝒍𝒆𝒔𝒔 𝒀𝒐𝒖 🤲🏻
+　.　　　　　🌟　　　　　.
+　　　✦　　　　　　🌍
+　　.　　　　　𝑴𝒂𝒚 𝒀𝒐𝒖𝒓 𝑫𝒓𝒆𝒂𝒎𝒔
+　.　　　　　𝑪𝒐𝒎𝒆 𝑻𝒓𝒖𝒆 ✨
+　　🌙　　　　　　⋆　　　　　　.
+　　　🪐　　　　　☄️　.　　　　　　𝑲𝒆𝒆𝒑 𝑺𝒉𝒊𝒏𝒊𝒏𝒈 🌟
+　　.　　　　　✦　　　　　.
+　　　　🌸　　　　　　🌍
+　.　　　　　𝑲𝒆𝒆𝒑 𝑺𝒎𝒊𝒍𝒊𝒏𝒈 ❤️　　⋆　　　　　.　　　　　☄️　.　　　　　　🌙　　　　　　✧
+　　　𝑺𝒕𝒂𝒚 𝑩𝒍𝒆𝒔𝒔𝒆𝒅 🤲🏻
+　　.　　　　　🌟　　　　　.
+　　　　🪐　　　　　⋆
+　.　　　　　　✦　　　　　　🌍
+　　.　　　　　❤️　　　　　.
+　　　　　𝑯𝒂𝒑𝒑𝒚 𝑩𝒊𝒓𝒕𝒉𝒅𝒂𝒚 🎂
+　.　　　　　🌸　　　　　　.
+　　　✦　　　　　𝑴𝒚 𝑱𝑨𝑵 ❤️　　.　　　　　　☄️　　　　　　.
+　　　　🌙　　　　　⋆
+　.　　　　　🌍　　　　　✧
+　　　🪐　　　　　　.　　　　　🌟
+　　.　　　　　　❤️🌸❤️　.　　　　　⋆　　　　　　.
+　　　☄️</pre>
+      </div>
+      <div class="cake-content">
+        <img src="Pictures/cake.png" alt="Birthday cake" class="cake-image">
+        <button id="cakeContinue" class="continueBtn">Continue ❤️</button>
+      </div>
+    </section>
+
+    <!-- THREE MAIN VIDEOS -->
+    <section id="videosScreen" class="screen">
+      <h2>Our Special Moments ❤️</h2>
+
+      <div class="video-card">
+        <video id="mainVideo1" class="main-video" playsinline controls>
+          <source src="Videos/video1.mp4" type="video/mp4">
+        </video>
+        <div class="video-controls">
+          <button class="pauseBtn" data-video="mainVideo1">Pause</button>
+          <button class="fullscreenBtn" data-video="mainVideo1">Full Screen</button>
+        </div>
+        <button class="videoContinue continueBtn">Chandnii ❤️</button>
+      </div>
+
+      <div class="video-card">
+        <video id="mainVideo2" class="main-video" playsinline controls>
+          <source src="Videos/video2.mp4" type="video/mp4">
+        </video>
+        <div class="video-controls">
+          <button class="pauseBtn" data-video="mainVideo2">Pause</button>
+          <button class="fullscreenBtn" data-video="mainVideo2">Full Screen</button>
+        </div>
+        <button class="videoContinue continueBtn">Chandnii ❤️</button>
+      </div>
+
+      <div class="video-card">
+        <video id="mainVideo3" class="main-video" playsinline controls>
+          <source src="Videos/video3.mp4" type="video/mp4">
+        </video>
+        <div class="video-controls">
+          <button class="pauseBtn" data-video="mainVideo3">Pause</button>
+          <button class="fullscreenBtn" data-video="mainVideo3">Full Screen</button>
+        </div>
+        <button class="videoContinue continueBtn">Chandnii ❤️</button>
+      </div>
+    </section>
+
+    <!-- PICTURES SECTION -->
+    <section id="picturesScreen" class="screen">
+      <h2>Beautiful Memories ❤️</h2>
+      <div class="picture-gallery">
+        <img src="Pictures/pic1.jpeg" alt="Memory 1">
+        <img src="Pictures/pic2.jpeg" alt="Memory 2">
+        <img src="Pictures/pic3.jpeg" alt="Memory 3">
+      </div>
+      <button id="picturesContinue" class="continueBtn">Continue ❤️</button>
+    </section>
+
+    <!-- LETTER SECTION -->
+    <section id="letterScreen" class="screen section-wallpaper rose-background">
+      <article class="letter-card">
+        <h1>❤️ Happy Birthday, My Love ❤️</h1>
+        <h3>To The Most Special Person In My Life 🥹</h3>
+
+        <p>My Dearest Love! ❤️</p>
+
+        <p>Today is your special day, and I want to tell you everything that I sometimes fail to express in my everyday words. First of all, I wish you the happiest birthday from the bottom of my heart. ❤️</p>
+
+        <p>I don't know if my words will ever be enough to make you realize how much you mean to me, but one thing I know for sure is that you are a beautiful part of my life. Talking to you, getting happy over your little things, and dreaming about beautiful moments together means more to me than words can explain.</p>
+
+        <p>I know we are not perfect. There may be times when we disagree, get upset with each other, or misunderstand one another. We are both human, and making mistakes is a part of life.</p>
+
+        <p><strong>But there is one thing I truly wish for: If we ever have misunderstandings between us, I hope we choose to sit together, talk things out, understand each other, and solve every problem together instead of walking away from each other.</strong></p>
+
+        <p>If you ever get upset with me, please tell me how you feel. If something I say hurts you, let me know. And if I ever make a mistake, give me a chance to understand it and make things right. I will always try my best to listen to you, understand your feelings, and improve myself.</p>
+
+        <p>I never want our little arguments or misunderstandings to become bigger than the beautiful relationship we share. I want us to celebrate each other's happiness, support each other through difficult times, and make our bond stronger with every passing day. 🥺❤️</p>
+
+        <p>I don't expect you to be perfect, and I don't expect our relationship to be perfect either. All I wish for is that we remain sincere with each other, respect each other's feelings, and protect our relationship with love, trust, patience, and understanding.</p>
+
+        <p>On your birthday, my biggest prayer is that Allah fills your life with endless happiness, grants you everything your heart wishes for, keeps that beautiful smile on your face forever, and protects you from every pain and sadness.</p>
+
+        <p>And lastly, I just want to say something from my heart:</p>
+
+        <p><strong>I don't know what the future holds for us, but I truly hope we face every chapter of life by understanding each other, supporting each other, and choosing each other every single day. I want us to look back one day and smile at all the beautiful memories we created together. ❤️</strong></p>
+
+        <p>I don't just want beautiful moments with you; I want us to learn, grow, understand, and become better together.</p>
+
+        <p><strong>Happy Birthday, My Love! 🎂❤️</strong></p>
+
+        <p>Always stay happy, keep smiling, and never forget how special you are.</p>
+
+        <p><strong>You are special, your happiness matters, and I genuinely wish to see you happy, today and always. 🥹❤️</strong></p>
+
+        <p>With all my love, prayers, and the warmest wishes! ❤️</p>
+      </article>
+      <button id="letterContinue" class="continueBtn">Continue ❤️</button>
+    </section>
+
+    <!-- FINAL ENDING SECTION -->
+    <section id="endingScreen" class="screen section-wallpaper ending-background">
+      <div class="space-theme" id="endingSpaceTheme">
+<pre>Jêyå 
+　✧　　　　　　　　　　.
+　　　　　　🪐　　　　　°
+　　.　　　　　⋆　　　　　.　　　　　🌙
+　　　　*　　　　　　.　　　　　　✦
+　.　　　　　🛸　　　　　.
+　　　　　　　𝑯𝒂𝒑𝒑𝒚
+　　.　　　　　✧　　　　　　.
+　　　　🌟　　　　　　⋆
+　.　　　　　　　°　　　　　　　.
+　　　　　☄️　　　　　　✦
+　　.　　　　　𝑩𝒊𝒓𝒕𝒉𝒅𝒂𝒚
+　　　　˚　　　　　　　.
+　✦　　　　　🌙　　　　　.　　　　　🪐
+　　　.　　　　　　*　　　　　.
+　　⋆　　　　　　☄️　　　　　　𝑻𝒐
+　.　　　　　　✦　　　　　　　.
+　　　🌍　　　　　　˚
+　　.　　　　　🛸　　　　　.　　　　　🌟
+　　　　　⋆　　　　　　✧
+　.　　　　　　　𝑴𝒀
+　　.　　　　　　❤️　　　　　　.
+　　　　🌸　　　　　⋆
+　　　　　　𝑱𝑨𝑵 ❤️　.　　　　　✦　　　　　　.
+　　　🪐　　　　　　˚　　　　　☄️　　.　　　　　　⋆　　　　　　.
+　　　　　🌙　　　　　✧
+　.　　　　　　𝑴𝒚 𝑺𝒖𝒏𝒔𝒉𝒊𝒏𝒆 ☀️　　.　　　　　🌟　　　　　.
+　　　✦　　　　　　.　　　　　　🛸
+　.　　　　　˚　　　　　　☄️　　　　⋆　　　　　　🌍
+　　.　　　　　𝑴𝒚 𝑯𝒂𝒑𝒑𝒊𝒏𝒆𝒔𝒔 ❤️　.　　　　　　✧　　　　　　　.
+　　　🌙　　　　　　🪐
+　　⋆　　　　　.　　　　　✦
+　　　　.　　　　　　𝑴𝒚 𝑱𝒊𝒈𝒓𝒊𝒊𝒊
+　.　　　　　☄️　　　　　.
+　　　🌸　　　　　˚　　　　　🌟
+　　.　　　　　𝒀𝑨𝑹 🤭❤️　　　　　✦　　　　　　.
+　.　　　　　🛸　　　　　　⋆
+　　　　🌍　　　　　.　　　　　🌙
+　　.　　　　　　✧
+　　　　　𝑴𝒚 𝑩𝒆𝒔𝒕𝒊𝒆 🌸
+　.　　　　　⋆　　　　　.
+　　　🪐　　　　　✦　　　　　☄️　　.　　　　　𝑴𝒚 𝑭𝒂𝒗𝒐𝒖𝒓𝒊𝒕𝒆
+　.　　　　　🌙　　　　　.
+　　　⋆　　　　　　𝑷𝒆𝒓𝒔𝒐𝒏 ❤️　　✦　　　　　.　　　　　🌍
+　.　　　　　　☄️　　　　　　.
+　　　　˚　　　　　🌸
+　　.　　　　　𝑴𝒚 𝑶𝒏𝒆 & 𝑶𝒏𝒍𝒚 🫀
+　.　　　　　✧　　　　　.
+　　　🛸　　　　　　⋆　　　　　　🌙
+　　.　　　　　𝑴𝒚 𝑭𝒂𝒗𝒐𝒖𝒓𝒊𝒕𝒆 𝑯𝒖𝒎𝒂𝒏
+　.　　　　　　❤️🌸❤️　　　✦　　　　　　.　　　　　　🪐
+　　⋆　　　　　🌍　　　　　.
+　.　　　　　☄️　　　　　˚
+　　　🌟　　　　　　✧
+　　.　　　　　　𝑴𝒚 𝑺𝒂𝒇𝒆 𝑷𝒍𝒂𝒄𝒆 ❤️　.　　　　　🌙　　　　　　.
+　　　　⋆　　　　　✦
+　　.　　　　　　🛸　　　　　　.
+　　　　　𝑴𝒚 𝑷𝒆𝒂𝒄𝒆 🕊️　.　　　　　🌸　　　　　⋆
+　　　🪐　　　　　　.　　　　　☄️　　✧　　　　　.　　　　　🌍
+　.　　　　　　𝑴𝒚 𝑷𝒒𝒈𝒂𝒍𝒑𝒂𝒏 🤭
+　　🌙　　　　　⋆　　　　　.
+　.　　　　　✦　　　　　　🌟
+　　　.　　　　　　🛸
+　　　　　𝑴𝒚 𝑬𝒏𝒅𝒍𝒆𝒔𝒔 𝑺𝒎𝒊𝒍𝒆 ❤️　.　　　　　　☄️　　　　　.
+　　　⋆　　　　　🌍　　　　　✦
+　.　　　　　　𝑴𝒚 𝑭𝒐𝒓𝒆𝒗𝒆𝒓 𝑱𝑨𝑵
+　　❤️🌸❤️🌸❤️　.　　　　　🌙　　　　　　.
+　　　🪐　　　　　✧　　　　　☄️　　.　　　　　⋆　　　　　　.
+　　　　𝑴𝒂𝒚 𝑨𝒍𝒍𝒂𝒉 𝑩𝒍𝒆𝒔𝒔 𝒀𝒐𝒖 🤲🏻
+　.　　　　　🌟　　　　　.
+　　　✦　　　　　　🌍
+　　.　　　　　𝑴𝒂𝒚 𝒀𝒐𝒖𝒓 𝑫𝒓𝒆𝒂𝒎𝒔
+　.　　　　　𝑪𝒐𝒎𝒆 𝑻𝒓𝒖𝒆 ✨
+　　🌙　　　　　　⋆　　　　　　.
+　　　🪐　　　　　☄️　.　　　　　　𝑲𝒆𝒆𝒑 𝑺𝒉𝒊𝒏𝒊𝒏𝒈 🌟
+　　.　　　　　✦　　　　　.
+　　　　🌸　　　　　　🌍
+　.　　　　　𝑲𝒆𝒆𝒑 𝑺𝒎𝒊𝒍𝒊𝒏𝒈 ❤️　　⋆　　　　　.　　　　　☄️　.　　　　　　🌙　　　　　　✧
+　　　𝑺𝒕𝒂𝒚 𝑩𝒍𝒆𝒔𝒔𝒆𝒅 🤲🏻
+　　.　　　　　🌟　　　　　.
+　　　　🪐　　　　　⋆
+　.　　　　　　✦　　　　　　🌍
+　　.　　　　　❤️　　　　　.
+　　　　　𝑯𝒂𝒑𝒑𝒚 𝑩𝒊𝒓𝒕𝒉𝒅𝒂𝒚 🎂
+　.　　　　　🌸　　　　　　.
+　　　✦　　　　　𝑴𝒚 𝑱𝑨𝑵 ❤️　　.　　　　　　☄️　　　　　　.
+　　　　🌙　　　　　⋆
+　.　　　　　🌍　　　　　✧
+　　　🪐　　　　　　.　　　　　🌟
+　　.　　　　　　❤️🌸❤️　.　　　　　⋆　　　　　　.
+　　　☄️</pre>
+      </div>
+
+      <div class="ending-content">
+        <h1>𓆩 𝑴𝒚 𝑷𝒓𝒊𝒏𝒄𝒆𝒔𝒔 𝑹𝒊𝒅𝒖 𓆪</h1>
+        <p>Happy Birthday My Princess Ridu ❤️</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- SECTION MUSIC -->
+  <audio id="cakeSong" src="Songs/song1.mp3" loop></audio>
+  <audio id="picturesSong" src="Songs/song2.mp3" loop></audio>
+  <audio id="letterSong" src="Songs/song3.mp3" loop></audio>
+  <audio id="endingSong" src="Songs/last1.mp3" loop></audio>
+  <audio id="extraAudio" src="Songs/last2.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
